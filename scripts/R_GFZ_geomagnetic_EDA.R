@@ -131,7 +131,7 @@ ggplotKpAbsHistogram <- ggplotKpRootHistogram + scale_y_continuous(
   ) + ylab(label = "Count of observations in a bin") +
   xlab(label = "Kp index value")
 ggplotKpAbsHistogram
-# 9.3. obs shares on the OY axis
+# 9.2. obs shares on the OY axis
 ggplotKpRelHistogram <- ggplotKpRootHistogram +
   ggplot2::aes(y = ..count.. / sum(..count..)) +
   scale_y_continuous(
